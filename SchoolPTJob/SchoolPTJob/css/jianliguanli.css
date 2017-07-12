@@ -1,0 +1,158 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	width:100%;
+	height:100%;
+	font-family:"Microsoft Yahei",simSun,Arial;}
+#main{
+	width:880px;
+	
+	margin:0px auto;
+}
+#head{
+	width:100%;
+	height:40px;
+	position:fixed;
+	top:0px;
+}
+#lei{
+	margin-top:30px;
+	background: rgb(240,240,240);
+	color:rgb(118,118,118);
+	line-height: 60px;
+	width: 100%;
+	height: 60px;
+}
+#self{
+	float:left;
+
+}
+#self a{
+	text-decoration: none;
+color:rgb(118,118,118);
+}
+#edit{
+	text-indent: 0.5em;
+	font-size: 20px;
+	float:left;
+}
+#lei img{
+	float: left;
+	width:25px;
+	height: 25px;
+	margin-top: 15px;
+}
+#content{
+	width: 100%;
+	margin-top: 30px;
+	background: rgb(240,240,240);
+}
+#content1{
+	width: 860px;
+	margin:0px auto;
+}
+#logo{
+	margin-top: 30px;
+	width: 100%;
+	border-bottom: 3px solid #000;
+	margin: 0px auto;
+	padding: 15px 0px;
+}
+#logo img{
+	height: 40px;
+}
+#data{
+	
+	background: #fff;
+	width:100%;
+	height:180px;
+	margin:20px auto;
+}
+#dataL{
+	float: left;
+}
+#dataL img{
+	height: 160px;
+	margin: 10px 10px;
+	
+}
+#dataR{
+ width: 600px;
+ float: right;
+}
+#name{
+	font-size: 32px;
+	font-weight: bold;
+	line-height:100px;
+}
+#email{
+	text-indent: 2em;
+}
+#dataR ul li{
+	list-style:none;
+	font-size:16px;
+	color:rgb(85,85,85);
+	float:left;
+	line-height:40px;
+	font-weight: bold;
+}
+.kuai{
+	width:100%;
+	background: #fff;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+.title{
+	color:rgb(5,66,84);
+	clear: both;
+	font-size: 22px;
+	line-height: 30px;
+	margin-top: 10px;
+	height: 60px;
+}
+.title img{
+	width: 30px;
+	height: 30px;
+	margin-top:10px;
+	margin-left: 20px;
+	margin-bottom: -7px;
+	margin-right: 5px;
+}
+.more{
+	width:90%;
+	margin: 0px auto;
+	color:rgb(118,118,118);
+	line-height: 30px;
+}
+.more1{
+	float: left;
+	width:130px;
+}
+.more2{
+	float: left;
+	width:200px;
+}
+.more3{
+	text-indent: 6em;
+}
+#bt{
+	background: rgb(0,183,237);
+	width:140px;
+	height:50px;
+	margin:30px auto 0px auto;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	color:#fff;
+
+}
+#none{
+	height:30px;
+}
+#foot{padding-top:40px;width:100%;height:100px;background:rgb(37,49,59);line-height:20px;}
+#foot p{font-size:14px;color:#fff;text-align:center;}

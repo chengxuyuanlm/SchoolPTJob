@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="../css/paging.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/search.css">
+        <link type='text/css' rel='stylesheet' href='../css/base.css'>
+    </head>
+    <body>
+        <!--顶部导航栏-->
+        <nav>
+            <div id="top">
+               <div id ="logo"><img src="../image/logo.png"></div>
+                <ul>
+                    <li><a href="#" title="" class="a_click">首页</a></li>
+                    <li><a href="#" title="">个人中心</a></li>
+                    <li><a href="#" title="">发布职位</a></li>
+                    <li><a href="#" title="">活动</a></li>
+                    <li><a href="#" title="">加油站</a></li>
+                </ul>
+                <div class="In"><a class="login" href="index_login_student.html">学生入口</a></div>
+                <div class="In"><a class="login" href="index_login_company.html">企业入口</a></div> 
+                <div class="In user"><a class="login" href="#"></a></div>
+                <div class="In user"><a class="login" href="#">退出</a></div> 
+            </div>
+            
+        </nav>
+        <!--顶部导航栏-->
+<div id="main">
+    <div id="search">
+        <input id="test" value="">
+        </input>
+        <div id="btn">搜索兼职
+        </div>
+    </div>
+    <div id="limit">
+        <div id="select">
+            <div class="title">筛选列表</div>
+                <div class="select" id="select1">
+                    <ul>
+                        <p class="selectT">日薪范围：</p>
+                        <li class="selecting">不限</li>
+                        <li class="selected">20-30</li>
+                        <li class="selected">30-50</li>
+                        <li class="selected">50-70</li>
+                        <li class="selected">70-100</li>
+                        <li class="selected">100以上</li>
+                    </ul>
+                </div>
+                <div class="select" id="select2">
+                    <ul>
+                        <p class="selectT">招聘人数：</p>
+                        <li class="selecting">不限</li>
+                        <li class="selected">0-5</li>
+                        <li class="selected">5-10</li>
+                        <li class="selected">10-15</li>
+                        <li class="selected">15-20</li>
+                        <li class="selected">20以上</li>
+                        <!--<li class="selected">25</li>
+                        <li class="selected">30</li>
+                        <li class="selected">35</li>-->
+                    </ul>
+                </div>
+                <div class="select" id="select3">
+                    <ul>
+                        <p class="selectT">兼职类型：</p>
+                        <li class="selecting">不限</li>
+                        <li class="selected">专业</li>
+                        <li class="selected">长期</li>
+                        <li class="selected">周末</li>
+                        <li class="selected">临时</li>
+                        <li class="selected">其他</li>
+                    </ul>
+                </div>
+                <!--<div class="select" id="select4">
+                    <ul>
+                        <p class="selectT">兼职对象：</p>
+                        <li class="selecting">不限</li>
+                        <li class="selected">小学生</li>
+                        <li class="selected">初中生</li>
+                        <li class="selected">高中生</li>
+                    </ul>
+                </div>
+                <div class="select" id="select5">
+                    <ul>
+                        <p class="selectT">兼职学历：</p>
+                        <li class="selecting">不限</li>
+                        <li class="selected">初中</li>
+                        <li class="selected">高中</li>
+                        <li class="selected">大专</li>
+                        <li class="selected">本科</li>
+                        <li class="selected">研究生</li>
+                    </ul>
+                </div>-->
+        </div>
+    </div>
+<div id="content">
+    <div id="sort" class="title">
+        <div style="float:left;width:130px;">排序方式</div>
+        <li class="sorting">综合排序</li>
+        <li class="sort">最近更新</li>
+        <li class="sort">最具人气</li>
+    </div>
+    <div id="content1">
+        <div id="loading">
+            <div class="spinner">
+                <div class="spinner-container container1">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container2">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+                <div class="spinner-container container3">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="content">
+            <div class="contentL">
+                <li class="contentT"><a href="#">数学辅导</a></li>
+                <li class="education">小学五年级</li>
+            </div>
+            <div class="img">
+                <img src="../image/pic4.png">
+            </div>
+            <div class="contentR">
+                <li >丽水</li>
+                <p>50/小时  周一~周五下午6：30~8：30</p>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="contentL">
+                <li class="contentT"><a href="#">英语辅导</a></li>
+                <li class="education">初中生</li>
+            </div>
+            <div class="img">
+                <img src="../image/pic4.png">
+            </div>
+            <div class="contentR">
+                <li >丽水</li>
+                <p>45/小时  周一~周三下午3：30~5：30</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentL">
+                <li class="contentT"><a href="#">语文辅导</a></li>
+                <li class="education">高三男生</li>
+            </div>
+            <div class="img">
+                <img src="../image/pic4.png">
+            </div>
+            <div class="contentR">
+                <li >丽水</li>
+                <p>100/天  周末上午8:00~下午5:00</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentL">
+                <li class="contentT"><a href="#">外卖配送员</a></li>
+                <li class="education">美团</li>
+            </div>
+            <div class="img">
+                <img src="../image/pic4.png">
+            </div>
+            <div class="contentR">
+                <li >丽水</li>
+                <p>12/小时  周一~周日 中午和傍晚</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentL">
+                <li class="contentT"><a href="#">外卖配送员</a></li>
+                <li class="education">美团</li>
+            </div>
+            <div class="img">
+                <img src="../image/pic4.png">
+            </div>
+            <div class="contentR">
+                <li>丽水</li>
+                <p>12/小时  周一~周日 中午和傍晚</p>
+            </div>
+        </div>
+    </div>-->
+    <div id="paging">
+        <div class="index-page" id="pageBox"></div>
+    </div>
+    
+    
+</div>
+    </div>
+<!-- footer start -->
+        <div id="footer">
+            <p>中国领先的大学生网络兼职平台&nbsp;&copy;2016大鱼</p>
+            <p>联系我们：浙江省丽水学院路1号</p>
+        </div>
+        <!-- footer end -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script src="../js/paging.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+ 
+ 
+ </html>

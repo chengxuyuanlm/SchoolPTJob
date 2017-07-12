@@ -1,0 +1,128 @@
+*{margin:0px;padding:0px;}
+  body{background:rgb(239,238,236)}
+  li{list-style:none;font-family:'Microsoft yahei'}
+	#head{
+		height:40px;
+		background:red;
+	}
+	#main{
+		width:60%;		
+		background:white;
+		margin:40px auto;		
+	}
+	#teacher{
+		margin:10px;
+	}
+	
+	#teacher li{
+	    margin: 0 10px;
+		float:left;
+		line-height:50px;
+		font-family:'Microsoft yahei';
+		font-size:20px;
+		color:rgb(0,186,238);
+	}
+	#date{
+		float:right;
+	}
+	#date li{
+		float:left;
+		text-align:center;
+		line-height:55px;
+		margin: 0 10px;
+		font-family:'Microsoft yahei';	
+		font-size:10px;
+		color:rgb(136,133,128);
+	}
+	#date li img{
+		width:36px;
+		height:36px;
+		cursor:pointer;
+		margin-top:15px;
+	}
+	#title{
+		height:60px;
+	}
+
+
+	#demand{
+				
+		border-top:1px solid rgb(136,133,128);		
+	}
+	#demand ul{
+	    height:50px;
+		margin-top:30px;
+		padding-left:10px;
+		
+	}
+	
+	#demand ul li{
+		
+		margin:0 5px;		
+		color:rgb(103,104,98);
+		font-size:18px;
+		text-align:center;
+		float:left;
+	}
+	#demand ul li.line{
+		border-right:2px solid rgb(104,103,98);
+		width:100px;
+        
+	}
+	#demand ul li.money{	  
+		border-right:2px solid rgb(104,103,98);
+		width:150px;
+	}
+	#demand ul li.time{	  
+		border-right:2px solid rgb(104,103,98);
+		width:270px;
+	}	
+	#demand .address{
+		margin-left:20px;
+		margin-top:0px;
+		text-align:center;
+	}
+	#content{
+	    margin:auto;
+		width:90%;
+		height:63%;
+		border-top:1px solid rgb(103,104,98);
+	}
+	#content h2{
+		margin-top:20px;
+	}
+		#content p{
+		font-family:'mircosoft yahei';
+		font-size:20px;
+		line-height:33px;
+		margin-left:28px;
+		color:rgb(103,104,98);
+	}
+		
+	#box{
+		margin-top:50px;
+		height:150px;
+		border-top:1px solid rgb(103,104,98);
+	}
+	#box .btn{
+		margin: 50px auto;
+		cursor:pointer;
+		width:150px;
+		height:60px;
+		font-size:20px;
+		border-radius:5px;
+		background:rgb(0,186,238);
+		color:white;
+		font-family:'Microsoft yahei';
+		text-align:center;
+		line-height:61px;
+	}
+
+	#foot{
+		margin-top:50px;
+		width:100%;
+		height:400px;
+		background:rgb(37,52,62)
+
+	}
+ 

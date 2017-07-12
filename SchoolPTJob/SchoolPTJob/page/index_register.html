@@ -1,0 +1,75 @@
+﻿<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>Document</title>
+    <link type='text/css' rel='stylesheet' href='../css/base.css'></link>
+	<link rel="stylesheet" href="../css/index_register.css" />
+</head>
+<body>
+    <!-- container start -->
+	<div id="container">
+		 <!--顶部导航栏-->
+        <nav>
+            <div id="top">
+               <div id ="logo"><img src="../image/logo.png"></div>
+                <ul>
+                    <li><a href="#" title="" class="a_click">首页</a></li>
+                    <li><a href="#" title="">个人中心</a></li>
+                    <li><a href="#" title="">发布职位</a></li>
+                    <li><a href="#" title="">活动</a></li>
+                    <li><a href="#" title="">加油站</a></li>
+                </ul>
+                <div class="In"><a class="login" href="#">学生入口</a></div>
+                <div class="In"><a class="login" href="#">企业入口</a></div> 
+            </div>
+            
+        </nav>
+        <!--顶部导航栏-->
+		<!-- register_content start -->
+		<div id="register_content">
+			<div class="registerbar">
+				<ul>
+					<li class="on">手机注册</li>
+					<li>邮箱注册</li>
+				</ul>
+			</div>
+			<div class="register_moblieform">
+				<input name = 'phone' type="text" placeholder="请输入手机号码"/>
+				<input name = 'email' type="text" placeholder="请输入邮箱地址"/>
+				<input name = 'pwd' type="password" placeholder="请输入密码" />
+				<input name = 'yzm' type="" placeholder="请输入图片验证码" />
+				<div class="verification_Code">
+                    
+                    <canvas id="canvas" width="70px" height="30px"></canvas>            
+                </div>
+				<ul>
+					<li class="selectUser"><img src="../image/student.png" width="25" height="25" alt="" /><p>学生</p></li>
+					<li><img src="../image/company.png" width="25" height="25" alt="" /><p>企业</p></li>
+				</ul>
+				<div class="clause">
+					<input type="checkbox" />
+					<p>我已阅读并同意<span>《大鱼用户协议》</span></p>
+				</div>
+				<input type="button" disabled="disabled" class="btn" value="注册"/>
+			</div>
+		</div>
+		<!-- register_content end -->
+		<!-- footer start -->
+		<div id="footer">
+			<p>中国领先的大学生网络兼职平台&nbsp;&copy;2016大鱼</p>
+			<p>联系我们：浙江省丽水学院路1号</p>
+		</div>
+		<!-- footer end -->
+	</div>
+	<!-- container end -->
+	<!-- js start -->
+    <script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../js/yzm.js"></script>
+    <script type="text/javascript" src="../js/jquery.md5.js"></script>
+    <script type="text/javascript" src="../js/index_register.js"></script>
+	<!-- js end -->
+</body>
+</html>

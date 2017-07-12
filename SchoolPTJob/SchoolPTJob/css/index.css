@@ -1,0 +1,298 @@
+*{margin:0px;padding:0px;}
+li{list-style: none;}
+
+/*搜素框*/
+#banner{
+    width:100%;
+    height:410px;
+    position: relative;
+}
+#banner .btn{
+    width:63px;
+    height:63px;
+    line-height: 63px;
+    text-align: center;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top: -31px;
+    border-radius: 50%;
+    font-size: 40px;
+    z-index: 111;
+    display: none;
+}
+#banner #btnLeft{
+    left:70px;
+}
+#banner #btnLeft{
+    left:70px;
+}
+#banner #btnRight{
+    right:70px;
+}
+#banner #lb{
+    width:100%;
+    height:100%;
+}
+#banner #lb ul li{
+    float: left;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#banner #lb ul li:nth-child(1){
+    z-index: 11;
+}
+#banner #lb ul li img {
+    width: 100%;
+    height:100%;
+}
+#banner #search{
+    width:800px;
+    height:105px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -92px;
+    margin-left: -440px;
+    border-radius: 50px;
+    background: rgba(255,255,255,.5);
+    z-index: 111;
+}
+#banner #search #searchInput{
+    width:625px;
+    height:50px;
+    border: 5px solid #00b7ee;
+    border-radius: 50px 0 0 50px;
+    background: rgba(255,255,255,.5);
+    padding-left:20px; 
+    font-size: 20px;
+    float: left;
+    outline: none;
+}
+#banner #search #searchInput::-webkit-input-placeholder { /* WebKit browsers */
+    color:#00b7ee;
+    font-size: 20px;
+}
+
+#banner #search #searchInput::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#00b7ee;
+    font-size: 20px;
+}
+
+#banner #search #searchInput::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#00b7ee;
+    font-size: 20px;
+}
+
+#banner #search #searchInput::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#00b7ee;
+    font-size: 20px;
+}
+#banner #search #searchBtn{
+    float: left;
+    width:145px;
+    height:60px;
+    background:#00b7ee;
+    color:#fff;
+    border-radius: 0 50px 50px 0;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+#banner #search ul li{
+    float: left;
+    margin-left: 10px;
+    margin-top:10px;
+    
+}
+#banner #search ul li a{
+    color: #474747;
+    text-decoration: none;
+}
+#banner #search ul li a:hover{
+    color:#00b7ee;
+}
+/*搜素框*/
+
+/*兼职分类*/
+#workClass{
+    width:880px;
+    height:165px;
+    border-top: 1px solid #626262;
+    margin: 50px auto;
+    position: relative;
+}
+.tittle{
+    width:210px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    color:#049bc9;
+    background: #fff;
+    position: absolute;
+    top:-20px;
+    left:50%;
+    margin-left: -105px;
+    font-size: 20px;
+}
+#workClass ul li{
+    float: left;
+    color:#00b7ee;
+    border:2px solid #00b7ee;
+    border-radius: 10px;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top:50px;
+    margin-left: 54px;
+    position: relative;
+    cursor: pointer;
+}
+#workClass ul li:nth-child(1){
+    margin-left: 72px;
+}
+#workClass ul li:hover{
+    background:#00b7ee;
+    color:#fff;
+}
+#workClass ul li:hover .show{
+    display: block;
+}
+#workClass ul li .show{
+    width:880px;
+    position: absolute;
+    top:30px;
+    left:-53px;
+    padding-top:20px;
+    display: none; 
+}
+#workClass ul li .content{
+    width:840px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border:1px solid #bfbfbf;  
+    cursor: default;
+    text-align: left;
+}
+#workClass ul li .content a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color:#bfbfbf;
+    margin:0px 5px;
+}
+#workClass ul li .content .triangle{
+    position: absolute;
+    top:12px;
+    left:95px;
+    width:15px;
+    height:15px;
+    background:#fff;
+    border-top: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+}
+#workClass ul li .content a:hover{
+    text-decoration: underline;
+}
+/*兼职分类*/
+
+/*热门兼职推荐*/
+#hotWork{
+    width:880px;
+    border-top: 1px solid #626262;
+    margin: 50px auto 20px;
+    position: relative;
+}
+#hotWork #hotMain{
+    width:100%;
+    margin:50px auto 20px;
+}
+#hotWork #hotMain .work{
+    width:100%;
+    height:130px;
+    border:1px solid #d0d0d0;
+    margin-bottom: 30px;
+}
+#hotWork #hotMain .work .workCon{
+    float: left;
+    width:399px;
+    height:80px;
+    padding: 25px 20px;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+}
+#hotWork #hotMain .work .workCon:nth-child(1):hover{
+    box-shadow: -4px 1px 20px #666;
+}
+#hotWork #hotMain .work .workCon:nth-child(3):hover{
+    box-shadow: 4px 1px 20px #666;
+}
+#hotWork #hotMain .work  .hr{
+    width:2px;
+    height:100px;
+    margin-top: 15px;
+    float: left;
+    background:#000;
+}
+#hotWork #hotMain .work .workCon .conLeft{
+    float: left;
+    width:319px;
+    height: 100%;
+}
+#hotWork #hotMain .work .workCon .conLeft a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#0e576d;
+}
+#hotWork #hotMain .work .workCon .conLeft a:hover{
+    text-decoration: underline;
+}
+#hotWork #hotMain .work .workCon .conLeft p{
+    margin-bottom: 15px;
+    color: #767676;
+    font-size: 12px;
+}
+#hotWork #hotMain .work .workCon .conLeft p span{
+    margin-left: 6px;
+}
+#hotWork #hotMain .work .workCon .conRight{
+    float: right;
+    width:80px;
+    height: 80px;
+    background: #f0f0f0;
+    position: relative;
+}
+#hotWork #hotMain .work .workCon .conRight img{
+    position: absolute;
+    width:90%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+#more{
+    width: 100%;
+    height:30px;
+}
+#more a{
+    display: block;
+    float: right;
+    text-decoration: none;
+    color:#767676;
+}

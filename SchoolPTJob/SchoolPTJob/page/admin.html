@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en"  style="height:100%">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/admin.css">
+        <link href="../css/paging.css" rel="stylesheet" />
+        <script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+        <script type="text/javascript" src="../js/admin.js"></script>
+    </head>
+    <body style="height:100%">
+        <div id="admin_R">
+            <div id="admin_R_logo">
+                <img src="../image/pic11.png">
+            </div>
+            <div id="admin_R_stu" class="admin_R_stu">
+                <span>管理学生账号</span>
+            </div>
+            <div id="admin_R_com">
+                <span>管理企业账号</span>
+            </div>
+        </div>
+        <div id="admin_L">
+            <div id="admin_L_top">
+                <img src="../image/pic13.png" id="pic13">
+                <div id="admin_L_top_text">admin</div>
+                <img src="../image/pic12.png" id="pic12">
+            </div>
+            <div id="admin_L_center">
+                大鱼网后台管理系统
+            </div>
+
+            <div id="admin_L_down">
+                <div id="admin_L_down_1">
+                    <span>管理企业账号</span>
+                    <div id="admin_search_com_img">
+                        <img src="../image/admin_search.png">
+                    </div>
+                    <input type="text" name="" value=""  id="admin_search_com">
+
+                </div>
+                <div id="admin_L_down_1_1">
+                    <span>管理学生账号</span>
+                    <div id="admin_search_stu_img">
+                        <img src="../image/admin_search.png">
+                    </div>
+                    <input type="text" name="" value=""  id="admin_search_stu">
+
+                </div>
+                <div id="admin_L_down_2">
+                    <div id="loading">
+                        <div class="spinner">
+                            <div class="spinner-container container1">
+                                <div class="circle1"></div>
+                                <div class="circle2"></div>
+                                <div class="circle3"></div>
+                                <div class="circle4"></div>
+                            </div>
+                            <div class="spinner-container container2">
+                                <div class="circle1"></div>
+                                <div class="circle2"></div>
+                                <div class="circle3"></div>
+                                <div class="circle4"></div>
+                            </div>
+                            <div class="spinner-container container3">
+                                <div class="circle1"></div>
+                                <div class="circle2"></div>
+                                <div class="circle3"></div>
+                                <div class="circle4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <table id="admin_L_down_2_tab1">
+                        <!--<tr>
+                            <td>序号</td>
+                            <td>登录名称</td>
+                            <td>公司名称</td>
+                            <td>公司所有制</td>
+                            <td>所属行业</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>艾莱依</td>
+                            <td>浙江艾莱依商贸有限公司</td>
+                            <td>责任有限公司</td>
+                            <td>服装业</td>
+                            <td><img src="../image/change.png" class="admin_change" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>艾莱依</td>
+                            <td>浙江艾莱依商贸有限公司</td>
+                            <td>责任有限公司</td>
+                            <td>服装业</td>
+                            <td><img src="../image/change.png" class="admin_change" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>艾莱依</td>
+                            <td>浙江艾莱依商贸有限公司</td>
+                            <td>责任有限公司</td>
+                            <td>服装业</td>
+                            <td><img src="../image/change.png" class="admin_change" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>艾莱依</td>
+                            <td>浙江艾莱依商贸有限公司</td>
+                            <td>责任有限公司</td>
+                            <td>服装业</td>
+                            <td><img src="../image/change.png" class="admin_change" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>艾莱依</td>
+                            <td>浙江艾莱依商贸有限公司</td>
+                            <td>责任有限公司</td>
+                            <td>服装业</td>
+                            <td><img src="../image/change.png" class="admin_change" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>-->
+                    </table>
+                    <table id="admin_L_down_2_tab2">
+                        <!--<tr>
+                            <td>序号</td>
+                            <td>姓名</td>
+                            <td>专业</td>
+                            <td>学校</td>
+                            <td>学历</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>001</td>
+                            <td>林明慧</td>
+                            <td>计算机科学与技术专业</td>
+                            <td>丽水学院工学院</td>
+                            <td>大学</td>
+                            <td><img src="../image/change.png" class="admin_change2" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>林明慧</td>
+                            <td>计算机科学与技术专业</td>
+                            <td>丽水学院工学院</td>
+                            <td>大学</td>
+                            <td><img src="../image/change.png" class="admin_change2" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>林明慧</td>
+                            <td>计算机科学与技术专业</td>
+                            <td>丽水学院工学院</td>
+                            <td>大学</td>
+                            <td><img src="../image/change.png" class="admin_change2" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>林明慧</td>
+                            <td>计算机科学与技术专业</td>
+                            <td>丽水学院工学院</td>
+                            <td>大学</td>
+                            <td><img src="../image/change.png" class="admin_change2" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>林明慧</td>
+                            <td>计算机科学与技术专业</td>
+                            <td>丽水学院工学院</td>
+                            <td>大学</td>
+                            <td><img src="../image/change.png" class="admin_change2" />
+                            <img src="../image/delete.png" class="admin_delete" /></td>
+                        </tr>-->
+                    </table>
+
+
+                    <div id="paging">
+                        <div class="index-page" id="pageBox"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="alert">
+            <div id="alert_top">
+            企业账号信息修改
+            <div id="kuang"></div>
+            </div>
+            <div id="alert_center">
+                <table>
+                    <tr>
+                        <td>登录名称</td>
+                        <td><input type="text" name="comName" value="" placeholder=""></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>公司名称：</td>
+                        <td><input type="text" name="RealName" value="" placeholder=""></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>公司所有制：</td>
+                        <td><input type="text" name="Address" value="" placeholder=""></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>所属行业：</td>
+                        <td><input type="text" name="comPhone" value="" placeholder=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="alert_bottom">
+                <input type="submit" name="" value="确认修改">
+            </div>
+        </div>
+
+        <div id="alert2">
+            <div id="alert_top">
+            学生账号信息修改
+            <div id="kuang2"></div>
+            </div>
+            <div id="alert_center2">
+                <table>
+                    <tr>
+                        <td>姓名：</td>
+                        <td><input type="text" name="stuName" value="" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>性别：</td>
+                        <td><input type="text" name="Professional" value="" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>学校：</td>
+                        <td><input type="text" name="school" value="" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>联系电话：</td>
+                        <td><input type="text" name="Phone" value="" placeholder=""></td>
+                    </tr>
+                    <!--<tr>
+                        <td>邮箱：</td>
+                        <td><input type="text" name="" value="" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>外语水平：</td>
+                        <td><input type="text" name="" value="" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>工作经验：</td>
+                        <td><input type="text" name="" value="" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>技能与特长：</td>
+                        <td><input type="text" name="" value="" placeholder=""></td>
+                    </tr>-->
+                </table>
+            </div>
+            <div id="alert_bottom2">
+                <input type="submit" name="" value="确认修改">
+            </div>
+        </div>
+
+        <div id="all"></div>
+        <script src="../js/paging.js"></script>
+    </body>
+</html>

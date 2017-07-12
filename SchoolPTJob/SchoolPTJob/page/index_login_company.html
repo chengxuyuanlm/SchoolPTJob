@@ -1,0 +1,62 @@
+﻿<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>Document</title>
+	
+    <link type='text/css' rel='stylesheet' href='../css/base.css'></link>
+    <link rel="stylesheet" href="../css/index_login_company.css" />
+</head>
+<body>
+    <!-- container start -->
+	<div id="container">
+		 <!--顶部导航栏-->
+        <nav>
+            <div id="top">
+               <div id ="logo"><img src="../image/logo.png"></div>
+                <ul>
+                    <li><a href="#" title="" class="a_click">首页</a></li>
+                    <li><a href="#" title="">个人中心</a></li>
+                    <li><a href="#" title="">发布职位</a></li>
+                    <li><a href="#" title="">活动</a></li>
+                    <li><a href="#" title="">加油站</a></li>
+                </ul>
+                <div class="In"><a class="login" href="index_login_student.html">学生入口</a></div>
+                <div class="In"><a class="login" href="index_login_company.html">企业入口</a></div> 
+            </div>
+            
+        </nav>
+        <!--顶部导航栏-->
+		<!-- student_content start -->
+		<div id="student_content">
+			<div class="login_student">
+				<input name = 'phoneOrMail' type="text" placeholder="请输入手机号/邮箱地址" />
+                <input name = 'pwd' type="password" placeholder="请输入密码" />
+                <input name = 'yzm' type="text" placeholder="请输入图片验证码" />
+				<div class="verification_Code">
+                    <canvas id="canvas" width="70px" height="30px"></canvas>             
+                </div>
+				<ul>
+					<li><input type="checkbox" />记住我</li>
+				</ul>
+				<input type="button" class="btn" value="立即登录"/>
+			</div>
+		</div>
+		<!-- student_content end -->
+		<!-- footer start -->
+		<div id="footer">
+			<p>中国领先的大学生网络兼职平台&nbsp;&copy;2016大鱼</p>
+			<p>联系我们：浙江省丽水学院路1号</p>
+		</div>
+		<!-- footer end -->
+	</div>
+	<!-- container end -->
+	<script type="text/javascript" src="../js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../js/yzm.js"></script>
+    <script type="text/javascript" src="../js/jquery.md5.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/login_company.js"></script>
+</body>
+</html>

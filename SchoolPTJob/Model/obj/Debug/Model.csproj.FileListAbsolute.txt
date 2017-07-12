@@ -1,0 +1,11 @@
+E:\myWeb\SchoolPTJob\SchoolPTJob\Model\bin\Model.dll.config
+E:\myWeb\SchoolPTJob\SchoolPTJob\Model\bin\Model.dll
+E:\myWeb\SchoolPTJob\SchoolPTJob\Model\bin\Model.pdb
+E:\myWeb\SchoolPTJob\SchoolPTJob\Model\obj\Debug\Model.dll
+E:\myWeb\SchoolPTJob\SchoolPTJob\Model\obj\Debug\Model.pdb
+E:\myWeb\SchoolPTJob2\SchoolPTJob\Model\bin\Model.dll.config
+E:\myWeb\SchoolPTJob2\SchoolPTJob\Model\bin\Model.dll
+E:\myWeb\SchoolPTJob2\SchoolPTJob\Model\bin\Model.pdb
+E:\myWeb\SchoolPTJob2\SchoolPTJob\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\myWeb\SchoolPTJob2\SchoolPTJob\Model\obj\Debug\Model.dll
+E:\myWeb\SchoolPTJob2\SchoolPTJob\Model\obj\Debug\Model.pdb

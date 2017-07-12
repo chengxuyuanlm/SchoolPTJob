@@ -1,0 +1,733 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/company_information.css">
+    <link type='text/css' rel='stylesheet' href='../css/base.css'></link>
+    <script src="../js/jquery-1.12.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+    <script src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/company_information.js"></script>
+    <script type="text/javascript" src="../js/jquery.md5.js"></script>
+</head>
+<body>
+    <form action="company_information.ashx" method="post" enctype="multipart/form-data">
+        <!--顶部导航栏-->
+        <nav>
+            <div id="top">
+                <div id="logo"><img src="../image/logo.png"></div>
+                <ul>
+                    <li><a href="#" title="">首页</a></li>
+                    <li><a href="#" title="" class="a_click">个人中心</a></li>
+                    <li><a href="#" title="">发布职位</a></li>
+                    <li><a href="#" title="">活动</a></li>
+                    <li><a href="#" title="">加油站</a></li>
+                </ul>
+                <!-- <div class="In"><a class="login" href="#">学生入口</a></div>
+                <div class="In"><a class="login" href="#">企业入口</a></div>  -->
+                <div class="company_name"><a class="company_name_1" href="#">艾莱依</a></div>
+            </div>
+
+        </nav>
+        <!--顶部导航栏-->
+        <div class="user">
+            <ul class="user_photo">
+                <li class="photokuang"><input type="file" class="photoinput" /></li>
+                <li class="photo">
+                </li>
+                <li class="change_photo">更换头像</li>
+            </ul>
+            <ul class="user_name">
+                <li>你好!</li>
+                <li title="基本设置" class="basic_setup"><a href="#"></a></li>
+                <span class="icon5">&#xe600;</span>
+                <li class="address">地址：浙江省丽水市中山街 </li>
+            </ul>
+            <span class="icon4" title="您有新消息">&#xe6f1;</span>
+            <span class="icon3 iconmail" title="您未邮箱认证">&#xe645;</span>
+            <span class="icon2 icontel" title="您未手机认证">&#xe6b0;</span>
+            <span class="icon1 iconreal" title="您已实名认证">&#xe6fa;</span>
+        </div>
+        <div class="choose">
+            <ul>
+                <li class="choosebgc">账户首页</li>
+                <li onclick="employeechange()">账户信息</li>
+                <li>正在招聘</li>
+                <li>安全中心</li>
+                <li>招聘记录</li>
+                <li>新消息</li>
+            </ul>
+        </div>
+        <div class="information">
+            <!--账户首页-->
+            <div class="members_home">
+                <div class="members_home_top">
+                    <ul class="members_home_top_left">
+                        <li>发布招聘</li>
+                        <li><span class="span1 Post_recruitment"></span>条</li>
+                        <li>
+                            您有<span class="NoPeoplePT"></span>条招聘还未有人应聘
+                            <input type="button" class="looknow looknow1" value="立即查看" />
+                        </li>
+                    </ul>
+                    <ul class="members_home_top_center">
+                        <li>招聘学生</li>
+                        <li><span class="span1 Recruit_students"></span>人</li>
+                        <li>
+                            您有<span class="NoDisposePT"></span>条应聘消息未处理
+                            <input type="button" class="looknow looknow2" value="立即查看" />
+                        </li>
+                    </ul>
+                    <ul class="members_home_top_right">
+                        <li>
+                            信誉度：
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar nostar">&#xf0061;</span>
+                            <span class="span1">4</span>颗星
+                        </li>
+                        <li>
+                            活跃度：
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar nostar">&#xf0061;</span>
+                            <span class="iconstar nostar">&#xf0061;</span>
+                            <span class="span1">3</span>颗星
+                        </li>
+                        <li>
+                            满意度：
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar">&#xf0061;</span>
+                            <span class="iconstar nostar">&#xf0061;</span>
+                            <span class="span1">4</span>颗星
+                        </li>
+                    </ul>
+                </div>
+                <div class="members_home_center">
+                    <div class="lately_login">最近登录</div>
+                    <table>
+                        <tr>
+                            <td>登录时间</td>
+                            <td>离线时间</td>
+                            <td>在线时长</td>
+                            <td>登录位置</td>
+                            <td>异常状况</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>2008年10月15日9:56</td>
+                            <td>2008年10月15日14:23</td>
+                            <td>267分钟</td>
+                            <td>浙江丽水</td>
+                            <td>无</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>2008年10月15日9:56</td>
+                            <td>2008年10月15日14:23</td>
+                            <td>267分钟</td>
+                            <td>浙江温州</td>
+                            <td>异地登陆</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>2008年10月15日9:56</td>
+                            <td>2008年10月15日14:23</td>
+                            <td>267分钟</td>
+                            <td>浙江丽水</td>
+                            <td>无</td>
+                        </tr>
+                    </table>
+                    <div class="lately_login_lookmore">
+                        <input type="button" name="" value="查看更多" class="looknow">
+                    </div>
+                </div>
+            </div>
+            <!--账户信息-->
+            <div class="members_information">
+                <div class="base_information">
+                    <div class="base_information_head">
+                        <div class="base_information_head_left">基本信息</div>
+                        <span class="base_information_head_right1" id="editor">编辑</span>
+                        <span class="base_information_head_right2 hide" id="editorOK" onclick="employeechangeOK()">完成</span>
+                    </div>
+                    <table class="base_information_tab">
+                        <tr>
+                            <td>
+                                登录名称:
+                            </td>
+                            <td>
+                                <input type="text" id="text1" value="" class="base_information_input">
+                            </td>
+                            <!--<td>
+                                密码：
+                            </td>
+                            <td>
+                                <input type="password" id="pw1" value="12345678" class="base_information_input">
+                            </td>-->
+                            <td>
+                                公司名称:
+                            </td>
+                            <td>
+                                <input type="text" id="text5" value="" class="base_information_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                所属行业:
+                            </td>
+                            <td>
+                                <input type="text" id="text3" value="" class="base_information_input">
+                            </td>
+                            <td>
+                                公司所有制：
+                            </td>
+                            <td>
+                                <input type="text" id="text4" value="" class="base_information_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                手机号码:
+                            </td>
+                            <td>
+                                <input type="text" id="phone" value="" class="base_information_input">
+                            </td>
+                            <td>
+                                邮箱:
+                            </td>
+                            <td>
+                                <input type="text" id="email" value="" class="base_information_input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                执照、证明:
+                            </td>
+                            <td>
+                                <input type="file" name="file" id="certificate" class="base_information_input">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--正在招聘-->
+            <div class="looking_for">
+                <div class="looking_for_table">
+                    <div class="looking_for_table_header">
+                        <div class="looking_for_table_header_txt">
+                            正在招聘
+                        </div>
+                    </div>
+                    <table cellspacing="0" id="kk">
+                        <tr class="table_header">
+                            <td>兼职id</td>
+                            <td>兼职时间</td>
+                            <td>薪资待遇</td>
+                            <td>兼职地点</td>
+                            <td>兼职名称</td>
+                            <td>联系电话</td>
+                            <td>兼职类型</td>
+                            <td>需要人数</td>
+                            <td>操作</td>
+                        </tr>
+
+                        <!--<tr class="login_information">
+                            <td>服务</td>
+                            <td>2008年10月15日</td>
+                            <td>200/天</td>
+                            <td>浙江丽水</td>
+                            <td>服务员</td>
+                            <td>18867809746</td>
+                            <td>艾莱依</td>
+                            <td>2</td>
+                            <td>
+                                <img src="../image/change.png" class="person_change" />
+                                <img src="../image/delete.png" class="person_delete" />
+                            </td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>服务</td>
+                            <td>2008年10月15日</td>
+                            <td>200/天</td>
+                            <td>浙江丽水</td>
+                            <td>服务员</td>
+                            <td>18867809746</td>
+                            <td>艾莱依</td>
+                            <td>2</td>
+                            <td>
+                                <img src="../image/change.png" class="person_change" />
+                                <img src="../image/delete.png" class="person_delete" />
+                            </td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>服务</td>
+                            <td>2008年10月15日</td>
+                            <td>200/天</td>
+                            <td>浙江丽水</td>
+                            <td>服务员</td>
+                            <td>18867809746</td>
+                            <td>艾莱依</td>
+                            <td>2</td>
+                            <td>
+                                <img src="../image/change.png" class="person_change" />
+                                <img src="../image/delete.png" class="person_delete" />
+                            </td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>服务</td>
+                            <td>2008年10月15日</td>
+                            <td>200/天</td>
+                            <td>浙江丽水</td>
+                            <td>服务员</td>
+                            <td>18867809746</td>
+                            <td>艾莱依</td>
+                            <td>2</td>
+                            <td>
+                                <img src="../image/change.png" class="person_change" />
+                                <img src="../image/delete.png" class="person_delete" />
+                            </td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>服务</td>
+                            <td>2008年10月15日</td>
+                            <td>200/天</td>
+                            <td>浙江丽水</td>
+                            <td>服务员</td>
+                            <td>18867809746</td>
+                            <td>艾莱依</td>
+                            <td>2</td>
+                            <td>
+                                <img src="../image/change.png" class="person_change" />
+                                <img src="../image/delete.png" class="person_delete" />
+                            </td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>服务</td>
+                            <td>2008年10月15日</td>
+                            <td>200/天</td>
+                            <td>浙江丽水</td>
+                            <td>服务员</td>
+                            <td>18867809746</td>
+                            <td>艾莱依</td>
+                            <td>2</td>
+                            <td>
+                                <img src="../image/change.png" class="person_change" />
+                                <img src="../image/delete.png" class="person_delete" />
+                            </td>
+                        </tr>-->
+                    </table>
+                    <div class="addnew">
+                        添加兼职
+                    </div>
+                </div>
+            </div>
+            <!--安全中心-->
+            <div class="security_center">
+                <div class="security_center_table">
+                    <div class="security_center_table_header">
+                        <div class="security_center_table_header_txt">
+                            安全中心
+                        </div>
+                    </div>
+                    <table cellspacing="0" border='1'>
+                        <tr>
+                            <td>安全项目</td>
+                            <td>状态</td>
+                            <td>描述</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="icon iconperson">&#xe69e;</span>
+                                <span class="security_center_table_span">真实认证</span>
+                            </td>
+                            <td><span class="security_center_table_span realname"></span></td>
+                            <td>
+                                <span class="security_center_table_span">
+                                    <br>公司名称：<span class="e_Realname"></span><br>
+                                    平台不会泄露您的身份信息 <br>
+                                </span>
+                            </td>
+                            <td>——————</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="icon iconphone">&#xe611;</span>
+                                <span class="security_center_table_span">绑定手机号</span>
+                            </td>
+                            <td><span class="security_center_table_span phone"></span></td>
+                            <td>
+                                <span class="security_center_table_span">
+                                    <br>当前绑定手机号码：<span class="e_Phone"></span><br>
+                                    方便日后用户寻回密码以及接收平台发送重要信息。<br>
+                                </span>
+                            </td>
+                            <td>
+                                <div class="security_center_table_btn changephone">
+                                    修改手机号
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="icon iconemail">&#xe607;</span>
+                                <span class="security_center_table_span">绑定邮箱</span>
+                            </td>
+                            <td><span class="security_center_table_span email"></span></td>
+                            <td>
+                                <span class="security_center_table_span">
+                                    <br>当前绑定邮箱：<span class="e_Email"></span><br>
+                                    方便日后用户寻回密码以及接收力石重要信息。<br>
+                                </span>
+                            </td>
+                            <td>
+                                <div class="security_center_table_btn changeemail">
+                                    修改邮箱
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="icon iconcar">&#xe63a;</span>
+                                <span class="security_center_table_span">修改密码</span>
+                            </td>
+                            <td><span class="security_center_table_span">已保护</span></td>
+                            <td>
+                                <span class="security_center_table_span">
+                                    <br>建议定期修改密码，密码由6位以上数字、字母和特殊字符组成。<br>
+                                </span>
+                            </td>
+                            <td>
+                                <div class="security_center_table_btn changepwd">
+                                    修改密码
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <!--招聘记录-->
+            <div class="hiring_record">
+                <div class="hiring_record_table">
+                    <div class="hiring_record_table_header">
+                        <div class="hiring_record_table_header_txt">
+                            招聘记录
+                        </div>
+                    </div>
+                    <table cellspacing="0" id="cc">
+                        <tr>
+                            <td>职位名称</td>
+                            <td>学生姓名</td>
+                            <td>学生电话</td>
+                            <td>发布时间</td>
+                        </tr>
+                        <!--<tr class="login_information">
+                            <td>礼仪模特</td>
+                            <td>林明慧</td>
+                            <td>120元</td>
+                            <td>2008年10月15日</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>礼仪模特</td>
+                            <td>林明慧</td>
+                            <td>120元</td>
+                            <td>2008年10月15日</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>礼仪模特</td>
+                            <td>林明慧</td>
+                            <td>120元</td>
+                            <td>2008年10月15日</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>礼仪模特</td>
+                            <td>林明慧</td>
+                            <td>120元</td>
+                            <td>2008年10月15日</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>礼仪模特</td>
+                            <td>林明慧</td>
+                            <td>120元</td>
+                            <td>2008年10月15日</td>
+                        </tr>
+                        <tr class="login_information">
+                            <td>礼仪模特</td>
+                            <td>林明慧</td>
+                            <td>120元</td>
+                            <td>2008年10月15日</td>
+                        </tr>-->
+                    </table>
+                </div>
+            </div>
+            <!--新消息-->
+            <div class="news">
+                <div class="news_content">
+                    <!--<div class="anews">
+                        <div class="anews_head">应聘消息</div>
+                        <ul>
+                            <li>
+                                <small>应聘者：</small>
+                                <span class="stu_name li2span">林明慧</span>
+                            </li>
+                            <li>
+                                <small>应聘职位：</small>
+                                <span class="stu_name li2span">礼仪模特</span>
+                            </li>
+                            <li>
+                                <small>
+                                    <br>应聘者信息：<br>
+                                    学校：<span class="stu_school stu_infor">丽水学院</span><br>
+                                    专业：<span class="stu_major stu_infor">计算机科学与技术专业(.net)</span><br>
+                                    工作经验：<span class="stu_experience stu_infor">有</span>
+                                    <input type="button" class="looknow lookstu" value="查看简历" />
+                                    <br>
+                                </small>
+                            </li>
+                            <li>
+                                <div class="students_resume_btn_1">预约面试</div>
+                                <div class="students_resume_btn_2">直接拒绝</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="anews">
+                        <div class="anews_head">应聘消息</div>
+                        <ul>
+                            <li>
+                                <small>应聘者：</small>
+                                <span class="stu_name li2span">林明慧</span>
+                            </li>
+                            <li>
+                                <small>应聘职位：</small>
+                                <span class="stu_name li2span">礼仪模特</span>
+                            </li>
+                            <li>
+                                <small>
+                                    <br>应聘者信息：<br>
+                                    学校：<span class="stu_school stu_infor">丽水学院</span><br>
+                                    专业：<span class="stu_major stu_infor">计算机科学与技术专业(.net)</span><br>
+                                    工作经验：<span class="stu_experience stu_infor">有</span>
+                                    <input type="button" class="looknow lookstu" value="查看简历" />
+                                    <br>
+                                </small>
+                            </li>
+                            <li>
+                                <div class="students_resume_btn_1">预约面试</div>
+                                <div class="students_resume_btn_2">直接拒绝</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="anews">
+                        <div class="anews_head">应聘消息</div>
+                        <ul>
+                            <li>
+                                <small>应聘者：</small>
+                                <span class="stu_name li2span">林明慧</span>
+                            </li>
+                            <li>
+                                <small>应聘职位：</small>
+                                <span class="stu_name li2span">礼仪模特</span>
+                            </li>
+                            <li>
+                                <small>
+                                    <br>应聘者信息：<br>
+                                    学校：<span class="stu_school stu_infor">丽水学院</span><br>
+                                    专业：<span class="stu_major stu_infor">计算机科学与技术专业(.net)</span><br>
+                                    工作经验：<span class="stu_experience stu_infor">有</span>
+                                    <input type="button" class="looknow lookstu" value="查看简历" />
+                                    <br>
+                                </small>
+                            </li>
+                            <li>
+                                <div class="students_resume_btn_1">预约面试</div>
+                                <div class="students_resume_btn_2">直接拒绝</div>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div id="alert">
+            <div class="alert_top">
+                发布招聘
+                <div class="kuang"></div>
+            </div>
+            <div id="alert_center">
+                <span>兼职类型：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addKind"><br>
+                <span>兼职时间：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addTime"><br>
+                <span>薪资待遇：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addMoney"><br>
+                <span>兼职地点：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addAddress"><br>
+                <span>兼职名称：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addName"><br>
+                <span>联系电话：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addTel"><br>
+                <span>需要人数：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addNeed"><br>
+                <span>截止日期：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_addState"><br>
+            </div>
+            <div class="alert_bottom">
+                <input type="button" name="" value="确认发布" onclick="ptAddok()">
+            </div>
+        </div>
+
+        <div id="alert_amend">
+            <div class="alert_top">
+                修改兼职
+                <div class="kuang"></div>
+            </div>
+            <div id="alert_amend_center">
+                <span>兼职类型：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Kind"><br>
+                <span>兼职时间：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Time"><br>
+                <span>薪资待遇：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Money"><br>
+                <span>兼职地点：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Address"><br>
+                <span>兼职名称：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Name"><br>
+                <span>联系电话：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Tel"><br>
+                <span>需要人数：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_Need"><br>
+                <span>截止日期：&nbsp;&nbsp;&nbsp;</span>
+                <input type="text" name="" value="" placeholder="" id="pt_State"><br>
+            </div>
+            <div class="alert_bottom">
+                <input type="button" name="" value="确认修改" onclick="ptchangeok()">
+            </div>
+        </div>
+
+        <div id="alert_delete">
+            <div class="alert_top">
+                您确定要删除吗？
+                <div class="kuang2"></div>
+            </div>
+            <div id="alert_delete_center">
+                <div class="alert_delete_yes" onclick="ptdelet()">确定</div>
+                <div class="alert_delete_no no">取消</div>
+            </div>
+        </div>
+
+        <div id="alert_interview">
+            <div class="alert_top">
+                您确定通过吗？
+                <div class="kuang2"></div>
+            </div>
+            <div id="alert_interview_center">
+                <div class="alert_interview_yes" onclick="interviewOKok()">确定</div>
+                <div class="alert_interview_no no">取消</div>
+            </div>
+        </div>
+
+        <div id="alert_refuse">
+            <div class="alert_top">
+                您确定拒绝面试吗？
+                <div class="kuang2"></div>
+            </div>
+            <div id="alert_refuse_center">
+                <div class="alert_refuse_yes" onclick="interviewOKno()">确定</div>
+                <div class="alert_refuse_no no">取消</div>
+            </div>
+        </div>
+
+
+        <div class="alert_changepwd">
+            <div class="alert_top">
+                <span class="alert_top_text">修改密码</span>
+                <div class="alert_changepwd_kuang"></div>
+            </div>
+            <table class="alert_changepwd_center">
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>旧密码</td>
+                    <td><input type="password" placeholder="请输入旧密码" class="password" value="" /></td>
+                </tr>
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>新密码</td>
+                    <td><input type="password" placeholder="请输入新登录密码" class="newpassword" value="" /></td>
+                </tr>
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>重复密码</td>
+                    <td><input type="password" placeholder="请再次输入新登录密码" class="newpassword2" value="" /></td>
+                </tr>
+            </table>
+            <div class="alert_bottom">
+                <input type="button" name="" value="保存" onclick="changepwd()" class="alert_changepwd_btn">
+            </div>
+        </div>
+
+        <div class="alert_phone">
+            <div class="alert_top">
+                <span class="alert_top_text">修改手机号</span>
+                <div class="alert_changepwd_kuang"></div>
+            </div>
+            <table class="alert_phone_center">
+                <tr>
+                    <td>手机号</td>
+                    <td class="oldphone">
+                        1234578909
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>验证码</td>
+                    <td>
+                        <input type="password" placeholder="请输入验证码" />
+                        <div class="verification">获取验证码</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>新号码</td>
+                    <td><input type="password" placeholder="请再次输入新手机号码" /></td>
+                </tr>
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>验证码</td>
+                    <td>
+                        <input type="password" placeholder="请输入验证码" />
+                        <div class="verification">获取验证码</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="alert_bottom">
+                <input type="button" name="" value="保存" onclick="" class="alert_changepwd_btn">
+            </div>
+        </div>
+
+        <div class="alert_email">
+            <div class="alert_top">
+                <span class="alert_top_text">修改邮箱</span>
+                <div class="alert_changepwd_kuang"></div>
+            </div>
+            <table class="alert_email_center">
+                <tr>
+                    <td><span style="color:#ff0000;">* </span>新邮箱</td>
+                    <td><input type="text" placeholder="请输入邮箱" /></td>
+                </tr>
+            </table>
+            <div class="alert_bottom">
+                <input type="button" name="" value="确定" onclick="" class="alert_changepwd_btn">
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>中国领先的大学生网络兼职平台&nbsp;&copy;2016大鱼</p>
+            <p>联系我们：浙江省丽水学院路1号</p>
+        </div>
+        <div id="all"></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{ margin: 0;padding: 0;}
+li{ list-style: none; }
+html,body{ height: 100%; }
+#container{
+	width: 100%;
+	height: 100%;
+	background: url(../image/register_bg.png);
+}
+#container #header{
+	width: 100%;
+	height: 40px;
+	background: #FFFFFF;
+	position: absolute;
+	z-index: 1;
+}
+#container #register_content{
+	width: 380px;
+	height: 420px;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	margin-left: -60px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 1px 1px 5px #fff;
+}
+#container #register_content .registerbar{
+	width: 255px;
+	height: 51px;
+	margin-left: 65px;
+}
+#container #register_content .registerbar ul li{
+	width: 122px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	border-bottom: 1px solid #000;
+	float: left;
+	text-indent: 15px;
+	margin-left: 1px;
+	cursor: pointer;
+}
+#container #register_content .registerbar ul li.on{
+	border-color: rgb(191,235,249);
+	color: rgb(5,179,231);
+}
+#container #register_content .registerbar ul li p{
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-bottom: 10px solid rgb(5,179,231);
+	margin: -18px 0 0 48px;
+}
+
+#container #register_content .register_moblieform{
+	width: 255px;
+	margin: 25px 0 0 65px;
+	position: relative;
+}
+#container #register_content .register_moblieform input{
+	height: 30px;
+	color: rgb(188,189,190);
+	text-indent: 8px;
+	font-size: 16px;
+	margin: 25px 0 0 2px;
+}
+#container #register_content .register_moblieform .btn{
+	color:#fff;
+}
+#container #register_content .register_moblieform input:nth-of-type(1){
+	margin-top: 0;
+	width: 240px;
+}
+#container #register_content .register_moblieform input:nth-of-type(2){
+	margin-top: 0;
+	width: 240px;
+	display: none;
+}
+#container #register_content .register_moblieform input:nth-of-type(3){
+	width: 240px;
+}
+#container #register_content .register_moblieform input:nth-of-type(4){
+	width: 145px;
+}
+#container #register_content .register_moblieform .verification_Code{
+	width: 70px;
+	height: 30px;
+	border: 1px solid #000;
+	position: absolute;
+	top: 120px;
+	right: 9px;
+}
+#container #register_content .register_moblieform ul{
+	height: 25px;
+	margin-top: 25px;
+}
+#container #register_content .register_moblieform ul li{
+	width: 120px;
+	height: 25px;
+	border: 1px solid rgb(159,168,174);
+	float: left;
+	margin-left: 2px;
+	line-height: 26px;
+	color: rgb(159,168,174);
+	cursor: pointer;
+}
+#container #register_content .register_moblieform ul li p{
+	float: left;
+	margin-left: 10px;
+}
+#container #register_content .register_moblieform ul li img{
+	float: left;
+	margin-left: 15px;
+}
+#container #register_content .register_moblieform .clause{
+	height: 25px;
+	margin-top: 30px;
+}
+#container #register_content .register_moblieform .clause input{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+#container #register_content .register_moblieform .clause p{
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+	margin-left: 8px;
+}
+#container #register_content .register_moblieform .clause p span{
+	color: rgb(123,208,244);
+}
+#container #register_content .register_moblieform .btn{
+	background: rgb(9,186,239);
+	cursor: pointer;
+	width: 250px;
+	height: 40px;
+	border: none;
+	outline: none;
+	margin: 20px 0 0 2px;
+}
+#container #footer{
+	width: 100%;
+	height: 150px;
+	background: rgb(37,49,59);
+	position: absolute;
+	padding: 0px;
+	bottom: 0;
+}
+#container #footer p{
+	text-align: center;
+	color: #fff;
+}
+#container #footer p:nth-of-type(1){
+	margin-top: 40px;
+}
+#container #footer p:nth-of-type(2){
+	margin-top: 10px;
+}
+.selectUser{
+	background:rgb(9,186,239);
+}
+.selectUser p{
+	color:#fff;
+}

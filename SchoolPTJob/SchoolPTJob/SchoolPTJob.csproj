@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{173ABC32-6FD8-44CA-9ABD-980A44696487}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolPTJob</RootNamespace>
+    <AssemblyName>SchoolPTJob</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Model\bin\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\stuReg.ashx" />
+    <Content Include="ajax\companyReg.ashx" />
+    <Content Include="ajax\stuLogin.ashx" />
+    <Content Include="ajax\companyLogin.ashx" />
+    <Content Include="ajax\index.ashx" />
+    <Content Include="ajax\search.ashx" />
+    <Content Include="ajax\test.ashx" />
+    <Content Include="ajax\admin.ashx" />
+    <Content Include="ajax\company_information.ashx" />
+    <Content Include="ajax\resume.ashx" />
+    <Content Include="ajax\edit.ashx" />
+    <Content Include="ajax\content.ashx" />
+    <Content Include="ajax\content1.ashx" />
+    <Content Include="ajax\content_session.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\adminLogin.css" />
+    <Content Include="css\base.css" />
+    <Content Include="css\company_information.css" />
+    <Content Include="css\content.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\index_login_company.css" />
+    <Content Include="css\index_login_student.css" />
+    <Content Include="css\index_register.css" />
+    <Content Include="css\jianli.css" />
+    <Content Include="css\jianliguanli.css" />
+    <Content Include="css\paging.css" />
+    <Content Include="css\search.css" />
+    <Content Include="image\1.png" />
+    <Content Include="image\2.png" />
+    <Content Include="image\3.png" />
+    <Content Include="image\bad.png" />
+    <Content Include="image\clock.png" />
+    <Content Include="image\company.png" />
+    <Content Include="image\company_introduce.png" />
+    <Content Include="image\confirm.png" />
+    <Content Include="image\education.png" />
+    <Content Include="image\good.png" />
+    <Content Include="image\head.png" />
+    <Content Include="image\landmark.png" />
+    <Content Include="image\local.png" />
+    <Content Include="image\login_company_bg.png" />
+    <Content Include="image\login_student_bg.png" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\pic1.png" />
+    <Content Include="image\pic10.png" />
+    <Content Include="image\pic2.png" />
+    <Content Include="image\pic3.png" />
+    <Content Include="image\pic4.png" />
+    <Content Include="image\pic5.png" />
+    <Content Include="image\pic6.png" />
+    <Content Include="image\pic7.png" />
+    <Content Include="image\pic8.png" />
+    <Content Include="image\pic9.png" />
+    <Content Include="image\register_bg.png" />
+    <Content Include="image\student.png" />
+    <Content Include="index.html" />
+    <Content Include="css\admin.css" />
+    <Content Include="js\admin.js" />
+    <Content Include="js\adminLogin.js" />
+    <Content Include="js\company_information.js" />
+    <Content Include="js\content.js" />
+    <Content Include="js\edit.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\index_register.js" />
+    <Content Include="js\jianli.js" />
+    <Content Include="js\jquery-1.12.1.min.js" />
+    <Content Include="js\jquery-1.7.1.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.md5.js" />
+    <Content Include="js\login_company.js" />
+    <Content Include="js\login_student.js" />
+    <Content Include="js\paging.js" />
+    <Content Include="js\search.js" />
+    <Content Include="js\yzm.js" />
+    <Content Include="page\admin.html" />
+    <Content Include="page\adminLogin.html" />
+    <Content Include="page\company_information.html" />
+    <Content Include="page\content.html" />
+    <Content Include="page\edit.html" />
+    <Content Include="page\index_login_company.html" />
+    <Content Include="page\index_login_student.html" />
+    <Content Include="page\index_register.html" />
+    <Content Include="page\resume.html" />
+    <Content Include="page\search.html" />
+    <Content Include="page\test.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\admin.ashx.cs">
+      <DependentUpon>admin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\companyLogin.ashx.cs">
+      <DependentUpon>companyLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\companyReg.ashx.cs">
+      <DependentUpon>companyReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\company_information.ashx.cs">
+      <DependentUpon>company_information.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\content.ashx.cs">
+      <DependentUpon>content.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\content1.ashx.cs">
+      <DependentUpon>content1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\content_session.ashx.cs">
+      <DependentUpon>content_session.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\edit.ashx.cs">
+      <DependentUpon>edit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index.ashx.cs">
+      <DependentUpon>index.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\resume.ashx.cs">
+      <DependentUpon>resume.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\search.ashx.cs">
+      <DependentUpon>search.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\stuLogin.ashx.cs">
+      <DependentUpon>stuLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\stuReg.ashx.cs">
+      <DependentUpon>stuReg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\test.ashx.cs">
+      <DependentUpon>test.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{38f572dc-081b-480b-8efb-bf2ffc86917a}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{385e5ff0-ee33-4f2d-86dd-e902a2b01e8f}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61383</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
